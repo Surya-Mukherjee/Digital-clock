@@ -1,0 +1,48 @@
+body{
+    margin:0;
+
+}
+
+#clock-container{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  transform: translateY(300px);
+   font-size:100px;
+}
+#clock{
+    font-family:monospace;
+   background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  background-size: 1000% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: scrollGradient 20s linear infinite;
+}
+
+@keyframes scrollGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
